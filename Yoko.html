@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yoko kitchen</title>
+    <style>
+        html{
+            background-image: url("yokoimages/images/dark-wood.jpg") ;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        #main{
+            background-color: white;
+            border: 1px solid;
+            margin: 10px auto;
+            height: 625px;
+            width: 700px;
+        }
+        #main .head {
+            box-sizing: border-box;
+            height: 96px;
+        }
+        .head img{
+            height: 100%;
+            box-sizing: content-box;
+        }
+        .head-link li{
+            display: inline;
+            margin: 0px 10px;
+        }
+        .head-link a{
+            text-decoration: none;
+            color: black;
+            font-family: monospace, "Courier New";
+        }
+        .head-link ul{
+            margin: 0;
+            padding: 5px 10px 5px ;
+            background-color: #cccccc;
+        }
+        .body-content{
+            /*border: 1px solid red;*/
+            height:450px;
+            box-sizing: border-box;
+            display: flex;
+        }
+        .content{
+            /*border: 1px solid saddlebrown;*/
+            height:450px;
+            width: 70%;
+        }
+        .side-bar{
+            /*border: 1px solid blue;*/
+            height: 450px;
+            width: 30%;
+        }
+        .content1{
+            margin: 40px auto 10px auto;
+            height: 40%;
+        }
+        .content2 {
+            margin: 10px auto 10px auto;
+            height: 50%;
+        }
+        .content .image1{
+            border: 1px solid gray;
+            margin: 10px 10px 10px 10px;
+            padding: 5px 5px 10px 5px;
+            float: left;
+        }
+        figcaption{
+            font-family: monospace;
+        }
+        .content .contentin1{
+            font-family: "Times New Roman";
+            text-align: left;
+        }
+        .contentin1 h1{
+            color: gray;
+            margin: 10px auto 1px auto;
+        }
+        .contentin1 h2{
+            margin: 10px auto 15px auto;
+        }
+        .contentin1 p{
+            color: gray;
+        }
+        .content .contentin2{
+            font-family: "Times New Roman";
+            text-align: left;
+        }
+        .content .image2 {
+            border: 1px solid gray;
+            margin: auto 10px 30px 10px;
+            padding: 5px 5px 10px 5px;
+            float: left;
+        }
+        .contentin2 h1{
+            color: gray;
+            margin: 10px auto 1px auto;
+        }
+        .contentin2 h2 {
+            margin: 10px auto 15px auto;
+        }
+        .contentin2 p{
+            color: gray;
+        }
+        .side-bar1 h1{
+            color: hotpink;
+            text-align: center;
+        }
+        .side-bar1 a{
+            color: hotpink;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .side-bar1 li{
+            font-family: "Times New Roman";
+            text-align: center;
+            list-style: none;
+        }
+        .side-bar1 ul{
+            margin: 0;
+            padding: 20px;
+        }
+        .side-bar2 h1{
+            margin: 0;
+            text-align: center;
+            color: hotpink;
+        }
+        .side-bar2 p{
+            text-align: left;
+            padding: 10px;
+            color: gray;
+        }
+        .footer{
+            background-color: #929292;
+            height: 50px;
+            width: 100%;
+        }
+        .footer img{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div class="head">
+        <img src="yokoimages/images/header.jpg" alt="logo" width="700px"/>
+    </div>
+    <div class="head-link">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">classes</a></li>
+            <li><a href="#">catering</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+    <div class="body-content">
+        <div class="content">
+            <div class="content1">
+                <figure class="image1">
+                    <img width="145" height="95" src="yokoimages/images/bok-choi.jpg"/>
+                    <figcaption>Bok Choi</figcaption>
+                </figure>
+                <div class="contentin1">
+                    <h1>Japanese Vegetarian</h1>
+                    <h2 style="color: hotpink">Five week course in London</h2>
+                    <p>A five week introduction to traditional Japanese vegetarian meals,teaching you a selection of rice and noodle dishes.</p>
+                </div>
+            </div>
+            <div class="content2">
+                <figure class="image2">
+                    <img width="145" height="95" src="yokoimages/images/teriyaki.jpg"/>
+                    <figcaption>Teriyaki</figcaption>
+                </figure>
+                <div class="contentin2">
+                    <h1>Sauces Masterclass</h1>
+                    <h2 style="color: hotpink">One day workshop</h2>
+                    <p>An intensive one-day course looking at how to create the most delicous sauces for use in a range of Japanese cookery.</p>
+                </div>
+            </div>
+        </div>
+        <div class="side-bar">
+            <div class="side-bar1">
+                <h1 style="font-size: x-large">Popular Recipes</h1>
+                <ul>
+                    <li><a href="#">Yakitori (grilled chicken)</a></li><hr>
+                    <li><a href="#">Tsukune (minced chicken patties)</a></li><hr>
+                    <li><a href="#">Okonomiyaki (savory pancakes)</a></li><hr>
+                    <li><a href="#">Mizutaki (chicken stew)</a></li><hr>
+                </ul>
+            </div>
+            <div class="side-bar2">
+                <h1>Contact</h1>
+                <p>Yoko's Kitchen 27 Redchurch Street Shoreditch London E2 7DP.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="Screenshot_1.png"/>
+    </div>
+</div>
+</body>
+</html>
